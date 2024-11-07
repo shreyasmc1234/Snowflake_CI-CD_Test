@@ -100,6 +100,21 @@ create or replace TABLE HELLO_WORLD (
 	ADDRESS VARCHAR(500)
 );
 ```
+<h3>Github Actions:</h3>
+
+Executed the alter statement in Github and commited the changes
+
+![image](https://github.com/shreyasmc1234/Snowflake_CI-CD_Test/blob/main/Images/Screenshot%202024-11-07%20104609.png)
+
+Workflow got triggered 
+
+![image](https://github.com/shreyasmc1234/Snowflake_CI-CD_Test/blob/main/Images/Screenshot%202024-11-07%20104632.png)
+
+Job completed and made the changes to the main table
+
+![image](https://github.com/shreyasmc1234/Snowflake_CI-CD_Test/blob/main/Images/Screenshot%202024-11-07%20104700.png)
+
+
 
 
 <h3>Conclusion:</h3>
