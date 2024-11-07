@@ -104,7 +104,7 @@ create or replace TABLE HELLO_WORLD (
 
 Executed the alter statement in Github and commited the changes
 
-![image](https://github.com/shreyasmc1234/Snowflake_CI-CD_Test/blob/main/Images/Screenshot%202024-11-07%20104609.png)
+![image](https://github.com/shreyasmc1234/Snowflake_CI-CD_Test/blob/main/Images/Screenshot%202024-11-07%20110253.png)
 
 Workflow got triggered 
 
@@ -114,6 +114,9 @@ Job completed and made the changes to the main table
 
 ![image](https://github.com/shreyasmc1234/Snowflake_CI-CD_Test/blob/main/Images/Screenshot%202024-11-07%20104700.png)
 
+Changes are reflected in Snowflake
+
+![image](https://github.com/shreyasmc1234/Snowflake_CI-CD_Test/blob/main/Images/Screenshot%202024-11-07%20110548.png)
 
 
 
