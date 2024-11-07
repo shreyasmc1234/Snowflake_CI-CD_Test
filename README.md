@@ -70,6 +70,38 @@ jobs:
           pip install schemachange
           schemachange -f $GITHUB_WORKSPACE/migrations -a $SF_ACCOUNT -u $SF_USERNAME -r $SF_ROLE -w $SF_WAREHOUSE -d $SF_DATABASE -c $SF_DATABASE.SCHEMACHANGE.CHANGE_HISTORY --create-change-history-table
 ```
+
+<h3>Results:</h3>
+
+```
+-- Once the files are uploaded the changed timestamp and more details are updated in this table.
+
+use database sf_cicd;
+
+use schema schemachange;
+
+select * from change_history;
+
+VERSION	DESCRIPTION	SCRIPT	SCRIPT_TYPE	CHECKSUM	EXECUTION_TIME	STATUS	INSTALLED_BY	INSTALLED_ON
+1.1.1	Initial objects	V1.1.1__initial_objects.sql	V	11a7cce779a911b7d6a9928d9c330ff7c8fbf6d5b627544adc9d95fe	4	Success	SHRE1234	2024-11-04 22:54:53.790 -0800
+1.1.2	Updated objects	V1.1.2__updated_objects.sql	V	3a94dad244c63909acc40e43d1f2909e83694ff36ca836c8c8d628a7	4	Success	SHRE1234	2024-11-05 01:46:14.162 -0800
+1.1.3	Updated objects	V1.1.3__updated_objects.sql	V	a0fb47bb7c6a35ba56f609287025cba845b67386807782cfb8f2a5e0	4	Success	SHRE1234	2024-11-06 20:18:02.196 -0800
+
+-- Main Table
+
+use schema demo;
+
+select get_ddl('table','Hello_world');
+
+create or replace TABLE HELLO_WORLD (
+	FIRST_NAME VARCHAR(16777216),
+	LAST_NAME VARCHAR(16777216),
+	AGE NUMBER(38,0),
+	ADDRESS VARCHAR(500)
+);
+```
+
+
 <h3>Conclusion:</h3>
 This setup automates Snowflake schema changes using SchemaChange and GitHub Actions, ensuring smooth deployments with version control and secure credentials management.
 
