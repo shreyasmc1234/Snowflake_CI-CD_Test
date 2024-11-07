@@ -1,4 +1,4 @@
-#Snowflake CI/CD Demo with SchemaChange and GitHub Actions
+<h1>Snowflake CI/CD Demo with SchemaChange and GitHub Actions</h1>
 
 This project demonstrates how to use Snowflake, SchemaChange, and GitHub Actions to implement a simple CI/CD pipeline for automating Snowflake schema changes. The setup involves creating migration scripts, pushing them to GitHub, and using GitHub Actions to deploy those changes to Snowflake.
 
