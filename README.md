@@ -33,8 +33,6 @@ SF_PASSWORD: Snowflake password
 SF_ROLE: Snowflake role
 SF_WAREHOUSE: Snowflake warehouse
 SF_DATABASE: Snowflake database
-Workflow (SF_DEMO_CICD.yml)
-The GitHub Actions workflow runs SchemaChange to apply migrations:
 ```
 yaml file:
 ```
